@@ -1,0 +1,35 @@
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.images {
+  background: url(../../assets/Banner_png.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1200%;
+  animation: slideshow 150s linear infinite;
+  /* Hey browser, use your GPU */
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes slideshow {
+  0% {
+    left: 100;
+  }
+  100% {
+    left: -1200%;
+  }
+}
+
+/* @keyframes moveSlideshow {  
+  100% { 
+    -webkit-transform: translateX(-100%);  
+  }
+} */
+

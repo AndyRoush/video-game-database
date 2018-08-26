@@ -7,7 +7,6 @@ class Jumbotron extends Component {
     return(
       <Fragment>
         <img src={vgdb} className="img-fluid" alt="Responsive image"/>
-        {/* <img src="https://cdn-images-1.medium.com/max/2000/1*r2AuXvDuxdRWCqvmBhlssw.png" className="img-fluid" alt="Responsive image"/> */}
       </Fragment>
     )
   }
